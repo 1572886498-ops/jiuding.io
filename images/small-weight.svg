@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="300" viewBox="0 0 200 300">
+  <!-- 背景和阴影 -->
+  <defs>
+    <!-- 渐变定义 -->
+    <linearGradient id="smallGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#27ae60;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#219a52;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 高光渐变 -->
+    <linearGradient id="smallHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+    
+    <!-- 阴影滤镜 --<filter id="smallShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" />
+      <feOffset dx="2" dy="4" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  >
+  <!-- 主容器 --<g transform="translate(100, 150)" filter="url(#smallShadow)">
+    <!-- 砝码主体 - 圆形设计 --<circle cx="0" cy="0" r="40" fill="url(#smallGradient)" />
+    
+    <!-- 顶部挂环 --<path d="M-12,-40 L-12,-60 C-12,-75 12,-75 12,-60 L12,-40 Z" fill="#2c3e50" />
+    <circle cx="0" cy="-60" r="15" fill="url(#smallGradient)" />
+    <circle cx="0" cy="-60" r="5" fill="#2c3e50" />
+    
+    <!-- 中心标记 --<line x1="-15" y1="0" x2="15" y2="0" stroke="#ffffff" stroke-width="2" />
+    <line x1="0" y1="-15" x2="0" y2="15" stroke="#ffffff" stroke-width="2" />
+    
+    <!-- 环形刻度 --<g stroke="#ffffff" stroke-width="1">
+      <!-- 8个刻度点 --<path d="M0,-35 L0,-40" />
+      <path d="M0,35 L0,40" />
+      <path d="M-35,0 L-40,0" />
+      <path d="M35,0 L40,0" />
+      <path d="M25,-25 L28,-28" />
+      <path d="M25,25 L28,28" />
+      <path d="M-25,-25 L-28,-28" />
+      <path d="M-25,25 L-28,28" />
+    </g>
+    
+    <!-- 高光效果 --<path d="M-30,-30 L30,30" stroke="url(#smallHighlight)" stroke-width="2" />
+    
+    <!-- 重量标记 --<text x="0" y="65" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="bold">20g</text>
+  </g>
+  >
+  <!-- 品牌信息 -->
+  <text x="100" y="260" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50" text-anchor="middle" font-weight="bold">小型校准砝码</text>
+  <text x="100" y="280" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d" text-anchor="middle">不锈钢材质 M2等级</text>
+</svg>
